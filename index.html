@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carros Usados e Seminovos em Londrina | Matheusin na Área Veículos</title>
+    <title>Carros Usados e Seminovos em Londrina | Matheusin Veículos</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Procurando carros usados e seminovos em Londrina? A Matheusin na Área Veículos oferece consultoria especializada, veículos periciados com garantia e a melhor negociação. Fale conosco!">
-    <meta name="keywords" content="carros usados londrina, seminovos londrina, revenda de carros londrina, veículos periciados, comprar carro usado, consultoria automotiva londrina">
+    <meta name="description" content="Procurando carros usados e seminovos em Londrina? A Matheusin Veículos tem um estoque selecionado de veículos periciados com garantia. Venha nos visitar e fazer um ótimo negócio!">
+    <meta name="keywords" content="carros usados londrina, seminovos londrina, revenda de carros londrina, comprar carro usado, veículos periciados, garagem de carros londrina">
     <meta name="robots" content="index, follow">
 
     <!-- Google Fonts: Inter -->
@@ -25,6 +25,8 @@
         body {
             font-family: 'Inter', sans-serif;
             scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
         .hero-bg {
             background-image: linear-gradient(rgba(17, 24, 39, 0.85), rgba(17, 24, 39, 0.85)), url('https://storage.googleapis.com/gemini-prod-photorealistic-images/e642398b-724f-4d9f-8a48-0d127a3c75f1'); /* Imagem de autoridade */
@@ -32,6 +34,19 @@
             background-position: center;
             background-attachment: fixed;
         }
+        
+        /* Efeitos de Animação */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
     </style>
     
     <!-- JSON-LD Structured Data for Advanced SEO -->
@@ -39,7 +54,7 @@
     {
       "@context": "https://schema.org",
       "@type": "AutomotiveBusiness",
-      "name": "Matheusin na Área Veículos",
+      "name": "Matheusin Veículos",
       "description": "Consultoria especializada na compra e venda de carros usados e seminovos periciados em Londrina.",
       "address": {
         "@type": "PostalAddress",
@@ -62,15 +77,15 @@
     <header class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="text-2xl font-bold text-gray-900">
-                Matheusin na Área<span class="text-blue-600"> Veículos</span>
+                <span>Matheusin</span><span class="text-blue-600"> Veículos</span>
             </a>
             <div class="hidden md:flex space-x-8 items-center">
-                <a href="#processo" class="text-gray-600 hover:text-blue-600 transition duration-300">Nosso Processo</a>
+                <a href="#processo" class="text-gray-600 hover:text-blue-600 transition duration-300">Como Comprar</a>
                 <a href="#pilares" class="text-gray-600 hover:text-blue-600 transition duration-300">Nossos Pilares</a>
                 <a href="#depoimentos" class="text-gray-600 hover:text-blue-600 transition duration-300">Depoimentos</a>
                 <a href="#contato" class="text-gray-600 hover:text-blue-600 transition duration-300">Contato</a>
             </div>
-            <a href="https://wa.me/5543988762772" target="_blank" class="bg-green-500 text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-green-600 transition duration-300 flex items-center space-x-2 shadow-lg shadow-green-500/20 hover:shadow-green-600/30">
+            <a href="https://wa.me/5543988762772?text=Ol%C3%A1%2C%20acabei%20de%20acessar%20o%20seu%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Matheusin%20Ve%C3%ADculos" target="_blank" class="bg-green-500 text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-green-600 transition duration-300 flex items-center space-x-2 shadow-lg shadow-green-500/20 hover:shadow-green-600/30 transform hover:-translate-y-0.5">
                 <i data-lucide="message-circle"></i>
                 <span>Fale Conosco</span>
             </a>
@@ -78,23 +93,23 @@
     </header>
 
     <main>
-        <!-- Seção Principal (Hero com Gatilho da Autoridade) -->
+        <!-- Seção Principal -->
         <section class="hero-bg text-white">
             <div class="container mx-auto px-6 py-24 md:py-32 text-center">
-                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">Seu Próximo Semiusado, Sem Dor de Cabeça.</h1>
-                <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto">Na Matheusin na Área Veículos, transformamos a compra do seu carro em uma experiência segura e transparente. Encontramos os melhores seminovos de Londrina para você, com um processo de curadoria que garante o seu melhor negócio.</p>
-                <a href="#contato" class="bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-700 transition duration-300 inline-block shadow-lg shadow-blue-500/30 hover:shadow-blue-600/40">
-                    Encontre seu Carro Ideal
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">Seu Próximo Carro, Sem Dor de Cabeça.</h1>
+                <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto">Na Matheusin Veículos, a gente simplifica a compra do seu carro. Temos um estoque de seminovos selecionados a dedo aqui em Londrina, prontos para você encontrar o seu e fazer um ótimo negócio.</p>
+                <a href="#contato" class="bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-700 transition duration-300 inline-block shadow-lg shadow-blue-500/30 hover:shadow-blue-600/40 transform hover:-translate-y-1">
+                    Conheça Nossos Carros
                 </a>
             </div>
         </section>
 
-        <!-- Seção Nosso Processo (MAIS ORGANIZADA) -->
+        <!-- Seção Como Funciona a Compra -->
         <section id="processo" class="py-20 bg-white">
             <div class="container mx-auto px-6">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl font-bold text-gray-900 text-center">Nosso Processo: Simples, Transparente e Seguro.</h2>
-                    <p class="text-lg text-gray-600 text-center max-w-3xl mx-auto">Desenvolvemos um método de consultoria em 3 passos para garantir que você faça a melhor escolha, com total tranquilidade.</p>
+                <div class="text-center mb-16 fade-in">
+                    <h2 class="text-3xl font-bold text-gray-900 text-center">Comprar seu carro aqui é fácil</h2>
+                    <p class="text-lg text-gray-600 text-center max-w-3xl mx-auto">Nosso processo é pensado para ser rápido e sem complicação. Veja como é simples escolher seu próximo carro.</p>
                 </div>
                 <div class="relative">
                     <!-- Linha de conexão para Desktop -->
@@ -102,135 +117,135 @@
                     
                     <div class="relative grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
                         <!-- Passo 1 -->
-                        <div>
+                        <div class="fade-in" style="transition-delay: 100ms;">
                             <div class="relative inline-block mb-4">
                                 <div class="z-10 w-24 h-24 rounded-full bg-blue-600 text-white flex items-center justify-center text-4xl font-bold border-4 border-white shadow-lg">1</div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2">Entrevista e Alinhamento</h3>
-                            <p class="text-gray-700">Primeiro, conversamos para entender profundamente suas necessidades, estilo de vida e orçamento. É o ponto de partida para encontrarmos o carro perfeito para você.</p>
+                            <h3 class="text-xl font-bold mb-2">Conheça nosso Estoque</h3>
+                            <p class="text-gray-700">Venha nos visitar e ver de perto nossa seleção de carros. Todos os nossos veículos são escolhidos a dedo e estão prontos para você conhecer.</p>
                         </div>
                         <!-- Passo 2 -->
-                        <div>
+                        <div class="fade-in" style="transition-delay: 200ms;">
                             <div class="relative inline-block mb-4">
                                 <div class="z-10 w-24 h-24 rounded-full bg-blue-600 text-white flex items-center justify-center text-4xl font-bold border-4 border-white shadow-lg">2</div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2">Curadoria e Inspeção Rigorosa</h3>
-                            <p class="text-gray-700">Iniciamos uma busca ativa no mercado, selecionando apenas os veículos com melhor histórico. Cada carro passa por nossa inspeção de 110 itens e verificação completa do laudo cautelar.</p>
+                            <h3 class="text-xl font-bold mb-2">Faça um Test-Drive</h3>
+                            <p class="text-gray-700">Gostou de um carro? Agende um test-drive sem compromisso. É a melhor forma de sentir o veículo e ter certeza de que é o certo para você.</p>
                         </div>
                         <!-- Passo 3 -->
-                        <div>
+                        <div class="fade-in" style="transition-delay: 300ms;">
                             <div class="relative inline-block mb-4">
                                 <div class="z-10 w-24 h-24 rounded-full bg-blue-600 text-white flex items-center justify-center text-4xl font-bold border-4 border-white shadow-lg">3</div>
                             </div>
-                            <h3 class="text-xl font-bold mb-2">Apresentação e Pós-venda</h3>
-                            <p class="text-gray-700">Apresentamos as melhores opções com total transparência. Após sua escolha, cuidamos de toda a burocracia e oferecemos suporte completo na documentação e entrega.</p>
+                            <h3 class="text-xl font-bold mb-2">Saia de Carro Novo</h3>
+                            <p class="text-gray-700">Decidiu? A gente cuida de toda a papelada de forma rápida e transparente para você sair acelerando seu novo seminovo no mesmo dia.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Seção Pilares da Confiança (NOVA SEÇÃO - MAIS ELEGANTE E COESA) -->
+        <!-- Seção Por Que COMPRAR Conosco -->
         <section id="pilares" class="py-20 bg-gray-50">
             <div class="container mx-auto px-6">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl font-bold text-gray-900 text-center">Os Pilares da Nossa Confiança</h2>
-                    <p class="text-lg text-gray-600 text-center max-w-3xl mx-auto">Construímos nossa reputação sobre uma base de total transparência e compromisso com a sua segurança. Estes são os fundamentos do nosso trabalho.</p>
+                <div class="text-center mb-12 fade-in">
+                    <h2 class="text-3xl font-bold text-gray-900 text-center">No que a gente acredita</h2>
+                    <p class="text-lg text-gray-600 text-center max-w-3xl mx-auto">Nossa reputação é construída na base da honestidade e do compromisso com a sua segurança na hora da compra. É assim que a gente trabalha.</p>
                 </div>
                 <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
                     <!-- Pilar 1 -->
-                    <div class="flex items-start bg-white p-6 rounded-lg border border-gray-200 shadow-sm transition-all duration-300 hover:shadow-lg hover:border-blue-300">
+                    <div class="flex items-start bg-white p-6 rounded-lg border border-gray-200 shadow-sm transition-all duration-300 hover:shadow-xl hover:border-blue-300 hover:-translate-y-2 fade-in">
                         <div class="flex-shrink-0">
                             <div class="bg-blue-100 text-blue-600 w-12 h-12 rounded-full flex items-center justify-center">
                                 <i data-lucide="shield-check" class="w-6 h-6"></i>
                             </div>
                         </div>
                         <div class="ml-4">
-                            <h3 class="text-lg font-bold text-gray-900">Laudo Cautelar Aprovado</h3>
-                            <p class="mt-1 text-gray-600">Nenhum carro entra em nosso processo sem um laudo cautelar completo e aprovado. Verificamos estrutura, histórico, sinistros e leilão para garantir 100% de procedência.</p>
+                            <h3 class="text-lg font-bold text-gray-900">Carros 100% Verificados</h3>
+                            <p class="mt-1 text-gray-600">Nenhum carro entra no nosso estoque sem antes passar por uma vistoria completa. A gente olha a estrutura, o histórico e se já foi de leilão para garantir a procedência.</p>
                         </div>
                     </div>
                     <!-- Pilar 2 -->
-                    <div class="flex items-start bg-white p-6 rounded-lg border border-gray-200 shadow-sm transition-all duration-300 hover:shadow-lg hover:border-blue-300">
+                    <div class="flex items-start bg-white p-6 rounded-lg border border-gray-200 shadow-sm transition-all duration-300 hover:shadow-xl hover:border-blue-300 hover:-translate-y-2 fade-in" style="transition-delay: 100ms;">
                         <div class="flex-shrink-0">
                             <div class="bg-blue-100 text-blue-600 w-12 h-12 rounded-full flex items-center justify-center">
                                 <i data-lucide="wrench" class="w-6 h-6"></i>
                             </div>
                         </div>
                         <div class="ml-4">
-                            <h3 class="text-lg font-bold text-gray-900">Garantia e Suporte Pós-Venda</h3>
-                            <p class="mt-1 text-gray-600">Oferecemos garantia legal de 90 dias para motor e câmbio. Mais do que uma obrigação, é o nosso compromisso com a sua tranquilidade após a compra.</p>
+                            <h3 class="text-lg font-bold text-gray-900">Garantia e Suporte Depois da Compra</h3>
+                            <p class="mt-1 text-gray-600">Todo carro sai com garantia de 90 dias para motor e câmbio. É o nosso compromisso para você rodar tranquilo depois de fechar negócio.</p>
                         </div>
                     </div>
                     <!-- Pilar 3 -->
-                    <div class="flex items-start bg-white p-6 rounded-lg border border-gray-200 shadow-sm transition-all duration-300 hover:shadow-lg hover:border-blue-300">
+                    <div class="flex items-start bg-white p-6 rounded-lg border border-gray-200 shadow-sm transition-all duration-300 hover:shadow-xl hover:border-blue-300 hover:-translate-y-2 fade-in" style="transition-delay: 200ms;">
                         <div class="flex-shrink-0">
                             <div class="bg-blue-100 text-blue-600 w-12 h-12 rounded-full flex items-center justify-center">
                                 <i data-lucide="file-text" class="w-6 h-6"></i>
                             </div>
                         </div>
                         <div class="ml-4">
-                            <h3 class="text-lg font-bold text-gray-900">Processo sem Burocracia</h3>
-                            <p class="mt-1 text-gray-600">Cuidamos de toda a parte complexa da documentação e transferência. Nosso objetivo é proporcionar uma experiência de compra fluida, rápida e sem surpresas.</p>
+                            <h3 class="text-lg font-bold text-gray-900">Zero Dor de Cabeça com Papelada</h3>
+                            <p class="mt-1 text-gray-600">A gente cuida de toda a parte chata da documentação e da transferência. Sua única preocupação vai ser pegar a chave do carro novo.</p>
                         </div>
                     </div>
                     <!-- Pilar 4 -->
-                    <div class="flex items-start bg-white p-6 rounded-lg border border-gray-200 shadow-sm transition-all duration-300 hover:shadow-lg hover:border-blue-300">
+                    <div class="flex items-start bg-white p-6 rounded-lg border border-gray-200 shadow-sm transition-all duration-300 hover:shadow-xl hover:border-blue-300 hover:-translate-y-2 fade-in" style="transition-delay: 300ms;">
                         <div class="flex-shrink-0">
                             <div class="bg-blue-100 text-blue-600 w-12 h-12 rounded-full flex items-center justify-center">
-                                <i data-lucide="search" class="w-6 h-6"></i>
+                                <i data-lucide="sparkles" class="w-6 h-6"></i>
                             </div>
                         </div>
                         <div class="ml-4">
-                            <h3 class="text-lg font-bold text-gray-900">Curadoria Especializada</h3>
-                            <p class="mt-1 text-gray-600">Não vendemos qualquer carro. Realizamos uma curadoria ativa para encontrar apenas os seminovos que atendem ao nosso rigoroso padrão de qualidade e conservação.</p>
+                            <h3 class="text-lg font-bold text-gray-900">Só Carros Selecionados a Dedo</h3>
+                            <p class="mt-1 text-gray-600">A gente não vende qualquer carro. Nosso estoque é formado apenas por seminovos que estão em ótimo estado, com baixa quilometragem e que a gente teria orgulho de ter na garagem.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Seção de Depoimentos (Gatilho da Prova Social) -->
+        <!-- Seção de Depoimentos (Foco na COMPRA) -->
         <section id="depoimentos" class="py-20 bg-white">
             <div class="container mx-auto px-6">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl font-bold text-gray-900 text-center">A Confiança de Nossos Clientes é o Nosso Maior Ativo.</h2>
-                    <p class="text-lg text-gray-600 text-center max-w-3xl mx-auto">Veja o que alguns de nossos clientes dizem sobre a experiência de comprar com a Matheusin na Área Veículos.</p>
+                <div class="text-center mb-12 fade-in">
+                    <h2 class="text-3xl font-bold text-gray-900 text-center">Quem Comprou, Recomenda.</h2>
+                    <p class="text-lg text-gray-600 text-center max-w-3xl mx-auto">A satisfação de quem realiza o sonho do carro novo conosco é o nosso melhor cartão de visita.</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Depoimento 1 -->
-                    <div class="bg-gray-50 p-8 rounded-lg border border-gray-200">
+                    <div class="bg-gray-50 p-8 rounded-lg border border-gray-200 transition-all duration-300 hover:shadow-xl hover:border-gray-300 hover:-translate-y-2 fade-in" style="transition-delay: 100ms;">
                         <i data-lucide="quote" class="w-10 h-10 text-blue-300 mb-4"></i>
-                        <p class="text-gray-600 mb-6">"O Matheus encontrou o carro exato que eu queria, em um estado impecável. A transparência durante todo o processo foi o diferencial. Recomendo de olhos fechados!"</p>
+                        <p class="text-gray-600 mb-6">"Encontrei na Matheusin Veículos o carro exato que eu queria, em um estado impecável. A transparência durante todo o processo foi o diferencial. Recomendo de olhos fechados!"</p>
                         <div class="flex items-center">
                             <img src="https://placehold.co/50x50/E2E8F0/374151?text=JR" class="w-12 h-12 rounded-full mr-4" alt="Depoimento de cliente satisfeito de Londrina sobre a compra de um Hyundai Creta">
                             <div>
                                 <p class="font-bold text-gray-900">João R.</p>
-                                <p class="text-sm text-gray-500">Hyundai Creta</p>
+                                <p class="text-sm text-gray-500">Comprou um Hyundai Creta</p>
                             </div>
                         </div>
                     </div>
                     <!-- Depoimento 2 -->
-                    <div class="bg-gray-50 p-8 rounded-lg border border-gray-200">
+                    <div class="bg-gray-50 p-8 rounded-lg border border-gray-200 transition-all duration-300 hover:shadow-xl hover:border-gray-300 hover:-translate-y-2 fade-in" style="transition-delay: 200ms;">
                         <i data-lucide="quote" class="w-10 h-10 text-blue-300 mb-4"></i>
                         <p class="text-gray-600 mb-6">"Tinha medo de comprar carro usado, mas o profissionalismo da equipe me deixou muito segura. O laudo cautelar detalhado fez toda a diferença. Excelente atendimento!"</p>
                         <div class="flex items-center">
-                            <img src="https://placehold.co/50x50/E2E8F0/374151?text=MS" class="w-12 h-12 rounded-full mr-4" alt="Depoimento de cliente sobre a segurança de comprar um Honda Civic com laudo na Matheusin na Área Veículos">
+                            <img src="https://placehold.co/50x50/E2E8F0/374151?text=MS" class="w-12 h-12 rounded-full mr-4" alt="Depoimento de cliente sobre a segurança de comprar um Honda Civic com laudo na Matheusin Veículos">
                             <div>
                                 <p class="font-bold text-gray-900">Mariana S.</p>
-                                <p class="text-sm text-gray-500">Honda Civic</p>
+                                <p class="text-sm text-gray-500">Comprou um Honda Civic</p>
                             </div>
                         </div>
                     </div>
                     <!-- Depoimento 3 -->
-                    <div class="bg-gray-50 p-8 rounded-lg border border-gray-200">
+                    <div class="bg-gray-50 p-8 rounded-lg border border-gray-200 transition-all duration-300 hover:shadow-xl hover:border-gray-300 hover:-translate-y-2 fade-in" style="transition-delay: 300ms;">
                          <i data-lucide="quote" class="w-10 h-10 text-blue-300 mb-4"></i>
-                        <p class="text-gray-600 mb-6">"Agilidade e honestidade. Conseguiram uma ótima avaliação no meu usado e encontrei minha nova picape em menos de uma semana. Nota 10!"</p>
+                        <p class="text-gray-600 mb-6">"Agilidade e honestidade. Conseguiram uma ótima avaliação no meu usado na troca e já saí com minha nova picape no mesmo dia. Nota 10!"</p>
                         <div class="flex items-center">
                             <img src="https://placehold.co/50x50/E2E8F0/374151?text=PF" class="w-12 h-12 rounded-full mr-4" alt="Cliente de Londrina elogiando a agilidade na troca e compra de uma Fiat Strada">
                             <div>
                                 <p class="font-bold text-gray-900">Paulo F.</p>
-                                <p class="text-sm text-gray-500">Fiat Strada</p>
+                                <p class="text-sm text-gray-500">Comprou uma Fiat Strada</p>
                             </div>
                         </div>
                     </div>
@@ -239,14 +254,14 @@
         </section>
 
 
-        <!-- Seção de Contato (Gatilho da Ação) -->
+        <!-- Seção de Contato (CTA para COMPRA) -->
         <section id="contato" class="py-20 bg-gray-100">
             <div class="container mx-auto px-6">
-                <div class="text-center mb-12">
+                <div class="text-center mb-12 fade-in">
                      <h2 class="text-3xl font-bold text-gray-900 text-center">Vamos Encontrar seu Próximo Carro?</h2>
-                     <p class="text-lg text-gray-600 text-center max-w-3xl mx-auto">Entre em contato para iniciarmos a busca pelo veículo ideal para você. Se preferir, venha tomar um café e conhecer nosso espaço.</p>
+                     <p class="text-lg text-gray-600 text-center max-w-3xl mx-auto">Fale com a gente para tirar suas dúvidas sobre nossos carros. Se quiser, passe aqui para tomar um café, conhecer nosso estoque e bater um papo.</p>
                 </div>
-                <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-white rounded-lg p-8 shadow-md">
+                <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-white rounded-lg p-8 shadow-md fade-in">
                     <div>
                         <div class="flex items-center mb-6">
                             <i data-lucide="map-pin" class="w-10 h-10 text-blue-600 mr-4"></i>
@@ -260,19 +275,19 @@
                         </div>
                     </div>
                     <div class="flex flex-col space-y-6">
-                        <a href="https://wa.me/5543988762772" target="_blank" class="w-full text-center bg-green-500 text-white p-4 rounded-lg font-bold text-lg hover:bg-green-600 transition duration-300 flex items-center justify-center space-x-3 shadow-lg shadow-green-500/20 hover:shadow-green-600/30">
+                        <a href="https://wa.me/5543988762772?text=Ol%C3%A1%2C%20acabei%20de%20acessar%20o%20seu%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Matheusin%20Ve%C3%ADculos" target="_blank" class="w-full text-center bg-green-500 text-white p-4 rounded-lg font-bold text-lg hover:bg-green-600 transition duration-300 flex items-center justify-center space-x-3 shadow-lg shadow-green-500/20 hover:shadow-green-600/30 transform hover:-translate-y-1">
                             <i data-lucide="message-circle"></i>
-                            <span>Iniciar Conversa no WhatsApp</span>
+                            <span>Falar com um Especialista</span>
                         </a>
-                        <a href="https://www.google.com/maps/dir/?api=1&destination=Av.+Saul+Elkind,+3897,+Londrina" target="_blank" class="w-full text-center bg-blue-600 text-white p-4 rounded-lg font-bold text-lg hover:bg-blue-700 transition duration-300 flex items-center justify-center space-x-3 shadow-lg shadow-blue-500/20 hover:shadow-blue-600/30">
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=Av.+Saul+Elkind,+3897,+Londrina" target="_blank" class="w-full text-center bg-blue-600 text-white p-4 rounded-lg font-bold text-lg hover:bg-blue-700 transition duration-300 flex items-center justify-center space-x-3 shadow-lg shadow-blue-500/20 hover:shadow-blue-600/30 transform hover:-translate-y-1">
                              <i data-lucide="map"></i>
-                            <span>Traçar Rota até o Local</span>
+                            <span>Como Chegar</span>
                         </a>
                         <div class="text-center pt-4">
                             <p class="font-semibold mb-3">Siga-nos nas redes sociais:</p>
                             <div class="flex justify-center space-x-4">
-                                <a href="#" class="text-gray-500 hover:text-blue-600 transition duration-300" aria-label="Instagram"><i data-lucide="instagram" class="w-8 h-8"></i></a>
-                                <a href="#" class="text-gray-500 hover:text-blue-600 transition duration-300" aria-label="Facebook"><i data-lucide="facebook" class="w-8 h-8"></i></a>
+                                <a href="#" class="text-gray-500 hover:text-blue-600 transition duration-300 transform hover:scale-110" aria-label="Instagram"><i data-lucide="instagram" class="w-8 h-8"></i></a>
+                                <a href="#" class="text-gray-500 hover:text-blue-600 transition duration-300 transform hover:scale-110" aria-label="Facebook"><i data-lucide="facebook" class="w-8 h-8"></i></a>
                             </div>
                         </div>
                     </div>
@@ -284,15 +299,28 @@
     <!-- Rodapé -->
     <footer class="bg-gray-900 text-white">
         <div class="container mx-auto px-6 py-6 text-center text-gray-400">
-            <p>&copy; 2024 Matheusin na Área Veículos. Todos os direitos reservados.</p>
-            <p class="text-sm mt-1">Consultoria automotiva com confiança em Londrina.</p>
+            <p>&copy; 2025 Matheusin Veículos. Todos os direitos reservados.</p>
         </div>
     </footer>
 
     <script>
         lucide.createIcons();
+
+        // Efeitos de Animação ao Rolar a Página
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target); // Anima apenas uma vez
+                }
+            });
+        }, {
+            threshold: 0.1 // A animação começa quando 10% do elemento está visível
+        });
+
+        const elementsToAnimate = document.querySelectorAll('.fade-in');
+        elementsToAnimate.forEach((el) => observer.observe(el));
     </script>
 </body>
 </html>
-
 
